@@ -22,6 +22,10 @@ public class Main{
 
 
 
+        Coordinate milano = new Coordinate(45.000,9.000,46.000,10.000);
+        bergamo.area();
+
+
         bergamo.aggiungi(sensore1);
         bergamo.aggiungi(blu);
 
