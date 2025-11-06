@@ -29,6 +29,8 @@ public class Main{
         System.out.println(sensore1);
         System.out.println(bergamo);
 
+        System.out.println(bergamo.trovadaindirizzoIP("192.168.0.0"));
+
 
     }
 }

@@ -10,19 +10,58 @@ public class Registro {
 
 
 
+    //ricerca sensore da area
+
+
+
+
+
+
+    //ricerca sensore da 365 giorni di cambio della batteria
+
+
+
+
+
+
+
+
+
+
     public void aggiungi(Sensore t){
         elenco[size] = t;
         size++;
     }
 
 
-    public int trovadaindirizzoIP(Sensore t){
-        for(int i = 0; i < size; i++){
-            if(elenco[i].getIndirizzoIP() == t.getIndirizzoIP()){
-                return i;
+    public int trovadaindirizzoIP(String indirizzoIP) {
+        int posizione = -1;
+        for (int i = 0; i < size; i++) {
+            if (elenco[i].getIndirizzoIP().equals(indirizzoIP)) {
+                posizione = i;
+                break;
             }
         }
-        return -1;
+        return -1;  //da finire
+    }
+
+
+
+
+    public void eliminadaindirizzoIP(String indirizzoIP) {
+        int posizione = -1;
+        for (int i = 0; i < size; i++) {
+            if (elenco[i].getIndirizzoIP().equals(indirizzoIP)) {
+                posizione = i;
+                break;
+            }
+        }
+        if (posizione != -1) {
+            for (int i = posizione; i < size - 1; i++) {
+                elenco[i] = elenco[i + 1];
+            }
+            size--;
+        }
     }
 
 
