@@ -14,7 +14,7 @@ public class Registro {
     //ricerca sensore da area
     public void cercadaarea(double latmax, double latmin, double longmin, double longmax){
 
-        Sensore
+
 
     }
 
