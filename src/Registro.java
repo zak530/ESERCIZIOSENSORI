@@ -2,33 +2,24 @@ public class Registro {
 
     private Sensore[] elenco;
     private int size;
-    private double latitudinemax;
-    private double latitudinemin;
-    private double longitudinemax;
-    private double longitudinemin;
+
 
     public Registro(){
         elenco = new Sensore[10];
         size = 0;
-    }
-
-
-    public Registro(double latitudinemax, double latitudinemin, double longitudinemax, double longitudinemin){
-        this.longitudinemin=longitudinemin;
-        this.longitudinemax=longitudinemax;
 
     }
 
 
     //ricerca sensore da area
+    public void cercadaarea(double latmax, double latmin, double longmin, double longmax){
 
-    public boolean area(Coordinate l){
-        if(l.getlatitudine() < latitudinemax && l.getlatitudine()> latitudinemin){
-            return true;
-        }else{
-            return false;
-        }
+        Sensore
+
     }
+
+
+
 
 
 
