@@ -22,8 +22,8 @@ public class Main{
 
 
 
-        Coordinate milano = new Coordinate(45.000,9.000,46.000,10.000);
-        bergamo.area();
+        Coordinate italia = new Coordinate(45.000,9.000);
+
 
 
         bergamo.aggiungi(sensore1);
@@ -34,7 +34,6 @@ public class Main{
         System.out.println(bergamo);
 
         System.out.println(bergamo.trovadaindirizzoIP("192.168.0.0"));
-
 
     }
 }

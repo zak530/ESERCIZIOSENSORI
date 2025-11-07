@@ -1,62 +1,30 @@
 public class Coordinate {
 
+    private double longitudine;
+    private double latitudine;
 
+    public Coordinate (double longitudine, double latitudine){
 
-    private double latitudinemax;
-    private double latitudinemin;
-    private double longitutidemax;
-    private double longitudinemin;
-    private double superficie;
+        this.longitudine=longitudine;
+        this.latitudine=latitudine;
 
-    public Coordinate(double latitudinemin,double longitudinemin, double latitudinemax, double longitutidemax){
-        this.latitudinemax=latitudinemax;
-        this.latitudinemin=latitudinemin;
-        this.longitutidemax=longitutidemax;
-        this.longitudinemin=longitudinemin;
     }
 
-    public void setLatitudinemax(double latitudinemax) {
-        this.latitudinemax = latitudinemax;
+    public void setlongitudine(double longitudine) {
+        this.longitudine = longitudine;
     }
 
-    public double getLatitudinemax() {
-        return latitudinemax;
+    public double getlatitudine() {
+        return latitudine;
     }
 
-    public double getlongitudinemin() {
-        return longitudinemin;
+    public double getlongitudine() {
+        return longitudine;
     }
 
-    public void setLongitutidemin(double longitutidemin) {
-        longitudinemin = longitutidemin;
+    public void setlatitudine(double latitudine) {
+        this.latitudine = latitudine;
     }
-
-    public void setLongitutidemax(double longitutidemax) {
-        this.longitutidemax = longitutidemax;
-    }
-
-    public void setLatitudinemin(double latitudinemin) {
-        this.latitudinemin = latitudinemin;
-    }
-
-
-    public double getLongitutidemax() {
-        return longitutidemax;
-    }
-
-    public double getLatitudinemin() {
-        return latitudinemin;
-    }
-
-    public boolean area(double latitudine, double longitudine) {
-
-        if(latitudine <= latitudinemin && latitudine >= latitudinemax && longitudine <= longitudinemin && longitudine >= longitutidemax) {
-            return false;
-        }else {
-            return true;
-        }
-    }
-
 }
 
 
